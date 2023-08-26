@@ -36,7 +36,6 @@ body {
   padding: 16px 0;
   color: #aeaeae;
   text-align: center;
-  text-decoration: none;
 }
 .nav__list .nav__btn.active {
   color: #000;
@@ -105,6 +104,30 @@ body {
   right: 16px;
   font-size: 0.8em;
   color: #aeaeae;
+}
+
+.bubble {
+  height: 50px;
+  width: 280px;
+  border-radius: 8px;
+  position: relative;
+  left: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffd15f;
+  line-height: 30px;
+  cursor: pointer;
+}
+.bubble::before {
+  height: 0;
+  width: 0;
+  border-radius: 0;
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  border-bottom: 16px solid transparent;
+  border-right: 16px solid #ffd15f;
 }
 
 .login-container {
@@ -182,4 +205,64 @@ body {
 }
 .chats .preview:hover {
   background-color: #f2f2f2;
+}
+
+.chat {
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  background-color: #fb4239;
+}
+.chat .chat-screen {
+  overflow: auto;
+  height: calc(100% - 160px);
+}
+.chat .chat-screen .chat-screen__bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.chat .chat-screen .chat-screen__bubbles {
+  padding: 0;
+  list-style-type: none;
+}
+
+.chat-form {
+  height: 160px;
+  background-color: #fff;
+}
+.chat-form .chat-form__plugin {
+  height: 40px;
+  background-color: #f2f2f2;
+}
+.chat-form .chat-form__plugin .chat-form__icon {
+  line-height: 40px;
+  margin: 0 0 0 15px;
+}
+
+.chat-form__field {
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.chat-form__field .chat-form__msg {
+  height: 100px;
+  width: calc(100% - 120px);
+  border-radius: 0;
+  padding: 10px;
+  border: none;
+  resize: none;
+}
+.chat-form__field .chat-form__msg:focus {
+  outline: none;
+}
+.chat-form__field .chat-form__bt {
+  height: 100px;
+  width: 100px;
+  border-radius: 8px;
+  background-color: #fb4239;
+}
+.chat-form__field .chat-form__bt:active {
+  background-color: #e31f1d;
 }

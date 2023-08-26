@@ -2,6 +2,10 @@
 
 ### Demo: https://sass-zamong-talk.netlify.app/
 
+<p align="center">
+    <img src="./img/home.png" alt="main" width="100%" textaling="center"/>
+</p>
+
 ---
 
 - 이후 해보기

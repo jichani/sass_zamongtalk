@@ -1,6 +1,8 @@
 ## 강의명 : 초보자를 위한 Sass 기초 강의 & 자몽톡 클론코딩
 
-Demo: https://sass-zamong-talk.netlify.app/
+### Demo: https://sass-zamong-talk.netlify.app/
+
+---
 
 - 이후 해보기
   1. 친구 목록 만들기
